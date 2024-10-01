@@ -1,4 +1,15 @@
-    suspend fun heartRateCalculator(uri: Uri, contentResolver: ContentResolver): Int {
+import android.content.ContentResolver
+import android.graphics.Bitmap
+import android.graphics.Color
+import android.media.MediaMetadataRetriever
+import android.net.Uri
+import android.provider.MediaStore
+import android.util.Log
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.withContext
+import kotlin.math.min
+
+suspend fun heartRateCalculator(uri: Uri, contentResolver: ContentResolver): Int {
         return withContext(Dispatchers.IO) {
             val result: Int
             val proj = arrayOf(MediaStore.Images.Media.DATA)

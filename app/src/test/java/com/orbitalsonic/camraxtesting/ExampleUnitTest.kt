@@ -1,4 +1,4 @@
-package com.example.healthmonitoringapp
+package com.orbitalsonic.camraxtesting
 
 import org.junit.Test
 

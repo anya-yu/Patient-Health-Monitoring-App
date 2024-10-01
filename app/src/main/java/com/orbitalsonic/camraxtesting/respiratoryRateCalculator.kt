@@ -1,4 +1,8 @@
-    fun respiratoryRateCalculator(
+import kotlin.math.abs
+import kotlin.math.pow
+
+@OptIn(ExperimentalStdlibApi::class)
+fun respiratoryRateCalculator(
         accelValuesX: MutableList<Float>,
         accelValuesY: MutableList<Float>,
         accelValuesZ: MutableList<Float>,
