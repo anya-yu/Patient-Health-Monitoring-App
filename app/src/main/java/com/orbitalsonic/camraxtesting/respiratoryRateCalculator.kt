@@ -11,7 +11,7 @@ fun respiratoryRateCalculator(
         var currentValue: Float
         previousValue = 10f
         var k = 0
-        for (i in 11..<accelValuesY.size) {
+    for (i in 11 until accelValuesY.size) {
             currentValue = kotlin.math.sqrt(
                 accelValuesZ[i].toDouble().pow(2.0) + accelValuesX[i].toDouble()
                     .pow(2.0) + accelValuesY[i].toDouble().pow(2.0)
