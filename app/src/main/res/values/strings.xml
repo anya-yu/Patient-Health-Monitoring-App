@@ -2,4 +2,18 @@
     <string name="app_name">Patient Monitoring System</string>
     <string name="start_capture">Record</string>
     <string name="stop_capture">Stop</string>
+
+    <!-- Symptoms array for the spinner -->
+    <string-array name="symptoms_array">
+        <item>Nausea</item>
+        <item>Headache</item>
+        <item>Diarrhea</item>
+        <item>Sore Throat</item>
+        <item>Fever</item>
+        <item>Muscle Ache</item>
+        <item>Loss of Smell or Taste</item>
+        <item>Cough</item>
+        <item>Shortness of Breath</item>
+        <item>Feeling Tired</item>
+    </string-array>
 </resources>

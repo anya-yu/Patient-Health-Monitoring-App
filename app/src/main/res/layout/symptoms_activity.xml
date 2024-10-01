@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title for the page -->
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Symptom Logging Page"
+            android:textSize="18sp"
+            android:paddingBottom="16dp"
+            android:textStyle="bold"/>
+
+        <!-- Dropdown for selecting symptoms -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fever" /> <!-- This can be dynamically changed with the spinner -->
+
+        <Spinner
+            android:id="@+id/symptomSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/symptoms_array" />
+
+        <!-- Rating Bar for symptom severity -->
+        <RatingBar
+            android:id="@+id/symptomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="3"
+            android:layout_marginTop="16dp" />
+
+        <!-- Button to upload symptoms -->
+        <Button
+            android:id="@+id/uploadSymptomsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="UPLOAD SYMPTOMS" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
