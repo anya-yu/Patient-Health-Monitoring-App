@@ -7,8 +7,6 @@ import androidx.room.Query
 @Dao
 interface SymptomDao {
     @Insert
-    suspend fun insertSymptomData(symptomData: SymptomData)
-
-    @Query("SELECT * FROM symptom_data")
-    suspend fun getAllSymptoms(): List<SymptomData>
+    suspend fun insert(symptomData: SymptomData)
 }
+

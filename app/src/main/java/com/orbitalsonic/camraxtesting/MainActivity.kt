@@ -25,6 +25,7 @@ import java.util.concurrent.Executors
 import android.widget.Toast
 import androidx.camera.lifecycle.ProcessCameraProvider
 import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.camera.video.VideoCapture
 import androidx.core.content.PermissionChecker
@@ -98,6 +99,17 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
             if (!isRecording) {
                 startRecording()
             }
+        }
+
+        // Find the button by its ID
+        val symptomsButton = findViewById<Button>(R.id.symptomsBtn)
+
+        // Set an onClickListener on the button to navigate to the second activity
+        symptomsButton.setOnClickListener {
+            // Create an Intent to start the SymptomInputActivity
+            val intent = Intent(this, SymptomInputActivity::class.java)
+            startActivity(intent)  // This starts the second activity
+            Log.i("MainActivity","we are now in the second activity")
         }
     }
 
